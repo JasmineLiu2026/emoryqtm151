@@ -48,6 +48,7 @@ DROP TABLE IF EXISTS drivers;
 
 Create empty table from codebook
 -- SQLBook: Code
+-- Active: 1679430310346@@127.0.0.1@5433
 -- Create empty TABLE called "drivers"
 -- This example has five arguments separated by a comma
 -- that contain the "column_name" and "column_type", respectively
@@ -98,9 +99,10 @@ Try it yourself!
 -- Add your name/nationality and your neighbors'
 -- Select a new driver id (needs to be unique)
 -- Make sure to deparate arguments by a semicolon!
-
-
-
+INSERT INTO drivers VALUES (5, 'Jasmine Liu', 'Taiwanese', 99) ;
+INSERT INTO drivers VALUES (6, 'Neighbor A', 'Taiwanese', 80)
+-- double quotation in SQL means dataset name or column name
+-- so we usually use single quotation for characters
 -- SQLBook: Markup
 # <span style="color:darkblue"> II. Dataset Operations </span>
 
@@ -186,7 +188,8 @@ Try it yourself!
 with more than 60 victories
 -- SQLBook: Code
 -- Write your own code!
-
+SELECT nationality, driver_Id FROM drivers
+WHERE victories > 60 ;
 
 
 -- SQLBook: Markup
