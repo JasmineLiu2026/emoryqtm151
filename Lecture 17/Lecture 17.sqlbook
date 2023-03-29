@@ -232,6 +232,7 @@ HAVING SUM(victories) > 50;
 
 Subsetting **before** and **after** aggregating
 -- SQLBook: Code
+-- Active: 1679855949047@@127.0.0.1@5433@jasmineliu
 -- HAVING is the command you use to subset *after* aggregating
 -- This differs from WHERE, which is used to subset *before* aggregating
 -- SQL differentiates the two types of subsetting

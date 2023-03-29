@@ -275,7 +275,10 @@ Try it yourself!
 - Count the unique number of members by 'chamber'
 -- SQLBook: Code
 -- Write your own code
-
+SELECT chamber,       
+       COUNT(*) AS num_members_chamber       
+FROM us_congress_members
+GROUP BY chamber;
 
 
 
